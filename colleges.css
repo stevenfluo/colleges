@@ -1,0 +1,76 @@
+body {
+    display: grid;
+    grid-template-columns: 550px 375px;
+    grid-template-rows: auto;
+    font-family: sans-serif;
+}
+
+#websiteHeader {
+    font-weight: bold;
+    font-size: 36pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#collegeTableSection {
+    margin: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#collegeTable {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+td {
+    border-right: 2px solid DimGray;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+th {
+    background-color: #2e2e2e;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-right: 2px solid DimGray;
+}
+
+#collegeSearchSection {
+    margin: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#collegeSearch {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.collegeSearchRadioButton {
+    padding-left: 8px;
+    padding-top: 4px;
+}
+
+.collegeSearchTableCell {
+    padding: 6px;
+    border: none;
+}
+
+.collegeSearchRadioButton {
+    border: none;
+}
+
+.searchSmallSize {
+    font-size: 8pt;
+}

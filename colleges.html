@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Bay Area Colleges and Universities</title>
+<script src="colleges.js" defer></script>
+<style>
+    @import "reset.css";
+    @import "colleges.css";
+</style>
+</head>
+
+<body>
+    <h1 id = "websiteHeader">Bay Area Colleges and Universities</h1>
+
+    <div id = "collegeTableSection">
+        <table id="collegeTable">
+            <!-- <tr id="collegeTableHeaders">
+                <th id="nameHeader">Name</th>
+                <th id="satHighHeader">SAT High</th>
+                <th id="satLowHeader">SAT Low</th>
+                <th id="tuitionHeader">Tuition</th>
+            </tr> -->
+            <!--
+            <tr id="collegeTableRow1">
+                <td class="collegeTableCell" id="college1Name"></td>
+                <td class="collegeTableCell" id="college1SATHigh"></td>
+                <td class="collegeTableCell" id="college1SATLow"></td>
+                <td class="collegeTableCell" id="college1Tuition"></td>
+            </tr>
+            <tr id="collegeTableRow2">
+                <td class="collegeTableCell" id="college2Name"></td>
+                <td class="collegeTableCell" id="college2SATHigh"></td>
+                <td class="collegeTableCell" id="college2SATLow"></td>
+                <td class="collegeTableCell" id="college2Tuition"></td>
+            </tr>
+            <tr id="collegeTableRow3">
+                <td class="collegeTableCell" id="college3Name"></td>
+                <td class="collegeTableCell" id="college3SATHigh"></td>
+                <td class="collegeTableCell" id="college3SATLow"></td>
+                <td class="collegeTableCell" id="college3Tuition"></td>
+            </tr>
+            <tr id="collegeTableRow4">
+                <td class="collegeTableCell" id="college4Name"></td>
+                <td class="collegeTableCell" id="college4SATHigh"></td>
+                <td class="collegeTableCell" id="college4SATLow"></td>
+                <td class="collegeTableCell" id="college4Tuition"></td>
+            </tr>
+            <tr id="collegeTableRow5">
+                <td class="collegeTableCell" id="college5Name"></td>
+                <td class="collegeTableCell" id="college5SATHigh"></td>
+                <td class="collegeTableCell" id="college5SATLow"></td>
+                <td class="collegeTableCell" id="college5Tuition"></td>
+            </tr>
+            <tr id="collegeTableRow6">
+                <td class="collegeTableCell" id="college6Name"></td>
+                <td class="collegeTableCell" id="college6SATHigh"></td>
+                <td class="collegeTableCell" id="college6SATLow"></td>
+                <td class="collegeTableCell" id="college6Tuition"></td>
+            </tr>
+        -->
+        </table>
+    </div>
+
+    <div id = "collegeSearchSection">
+        <form>
+            <table id="collegeSearch">
+                <tr id="collegeSearchHeader">
+                    <th id="searchCriteriaHeader" colspan="3">Search Criteria</th>
+                </tr>
+                <tr class="collegeSearchTableRow">
+                    <td class="collegeSearchRadioButton">
+                        <input type="radio" id="public" value="public" name="schoolType" />
+                        <label for="public">Public</label>
+                    </td>
+                    <td class="collegeSearchRadioButton">
+                        <input type="radio" id="private" value="private" name="schoolType" />
+                        <label for="private">Private</label>
+                    </td>
+                    <td class="collegeSearchRadioButton">
+                        <input type="radio" id="neitherSchool" value="publicPrivate" name="schoolType" checked />
+                        <label for="neitherSchool">Don't Care</label>
+                    </td>
+                </tr>
+                <tr class="collegeSearchTableRow">
+                    <td colspan="2" class="collegeSearchTableCell">
+                        <p class="searchNormalSize">Maximum Tuition</p>
+                        <p class="searchSmallSize">Leave blank for don't care</p>
+                    </td>
+                    <td class="collegeSearchTableCell">
+                        <input type="text" id="maxTuition" />
+                    </td>
+                </tr>
+                <tr class="collegeSearchTableRow">
+                    <td colspan="2" class="collegeSearchTableCell">
+                        <p class="searchNormalSize">Maximum High SAT</p>
+                        <p class="searchSmallSize">Leave blank for don't care</p>
+                    </td>
+                    <td class="collegeSearchTableCell">
+                        <input type="text" id="maxHighSAT" />
+                    </td>
+                </tr>
+                <tr class="collegeSearchTableRow">
+                    <td colspan="2" class="collegeSearchTableCell">
+                        <p class="searchNormalSize">Minimum Low SAT</p>
+                        <p class="searchSmallSize">Leave blank for don't care</p>
+                    </td>
+                    <td class="collegeSearchTableCell">
+                        <input type="text" id="minLowSAT" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <button id="submitButton" type="button">Update</button>
+    </div>
+</body>
+</html>
